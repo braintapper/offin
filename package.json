@@ -1,11 +1,8 @@
 {
     "name": "offin",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Inject JSON data into an Office doucment",
     "main": "index.js",
-    "bin": {
-        "oxi": "cli.js"
-    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
