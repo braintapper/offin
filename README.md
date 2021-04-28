@@ -9,7 +9,13 @@ A simple library for injecting JSON data into Microsoft Office XML document temp
 `npm install offin [--save]`
 
 
+# Usage
 
+Tokens use mustache style:
+
+```
+{firstName} {lastName}
+```
 
 
 # Sample Code (coffeescript)
@@ -81,11 +87,6 @@ offin.pptx options
 ## 0.0.1
 
 * Initial release
-
-
-# Caveats
-
-* Excel substitution currently only works on the first sheet
 
 
 
