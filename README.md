@@ -12,7 +12,7 @@ A simple library for injecting JSON data into Microsoft Office XML document temp
 
 
 
-# Sample Code
+# Sample Code (coffeescript)
 
 ## Excel
 
