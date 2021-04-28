@@ -2,6 +2,17 @@
 
 A simple library for injecting JSON data into Microsoft Office XML document templates - `docx`, `xlsx`, `pptx`
 
+This uses `docxtemplater` and `xslx-template` to accomplish this. For consistency, all file types use mustache style tokens:
+
+```
+{firstName} {lastName}
+```
+
+To see how templating works:
+
+* DOCX and PPTX: https://docxtemplater.com/demo/#simple
+* XLSX: 
+
 
 
 # Installation
@@ -9,13 +20,8 @@ A simple library for injecting JSON data into Microsoft Office XML document temp
 `npm install offin [--save]`
 
 
-# Usage
 
-Tokens use mustache style:
 
-```
-{firstName} {lastName}
-```
 
 
 # Sample Code (coffeescript)
