@@ -9,9 +9,7 @@ A simple library for injecting JSON data into Microsoft Office XML document temp
 `npm install offin [--save]`
 
 
-# Basics
 
-Coming soon!
 
 
 # Sample Code
@@ -90,3 +88,8 @@ offin.pptx options
 * Excel substitution currently only works on the first sheet
 
 
+
+# Open Source Attributions
+
+* DOCX and PPTX Output: https://github.com/open-xml-templating/docxtemplater
+* XLSX Output: https://github.com/optilude/xlsx-template

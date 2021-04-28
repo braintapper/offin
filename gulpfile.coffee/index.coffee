@@ -1,18 +1,20 @@
 'use strict'
 
+series = require("gulp").series
+parallel = require("gulp").parallel
+watch = require("gulp").watch
+task = require("gulp").task
 
-taskMasterOptions = 
-  dirname: 'src/gulp' 
-  pattern: '*.coffee' 
-  cwd: process.cwd() 
-  watchExt: '.watch'  
 
-gulp = require('gulp-task-master')(taskMasterOptions)
+mainTask = require("./main.coffee")
 
-compileAll = ['compile-lib','compile-bin', 'compile-main']
-watchAll = ['compile-lib.watch','compile-bin.watch', 'compile-main.watch']
 
-gulp.task "watch",  watchAll
-gulp.task "bot", watchAll
 
-gulp.task "default", compileAll
+
+task "default", mainTask
+
+
+task "bot", (cb)->
+
+  watch mainTask.watch, mainTask
+

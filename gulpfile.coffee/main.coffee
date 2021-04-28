@@ -1,28 +1,19 @@
-###
+gulp   = require('gulp')
+coffee = require("gulp-coffee")
 
-# Compile bin folder
+# set the compilation order of the client
+sourcePaths = ["src/**/*.coffee"]
 
-`gulp compile-bin`
-
-
----
-###
+module.exports = (cb)->
+  destinationPath = "./"
 
 
-gulp   = require "gulp"
-coffee = require "gulp-coffee"
-plumber = require "gulp-plumber"
 
-# paths
+  stream = gulp.src(sourcePaths)
+  .pipe(coffee({bare:true}))
+  .pipe(gulp.dest(destinationPath)) #.pipe(jsmin()).pipe(gulp.dest(destinationPath))
+  stream.on 'end', ()->
+    cb()
 
-mainPath = ["./src/*.coffee","!./src/cli.coffee"]
-
-targetPath = "./"
-
-module.exports = ()->
-
-  gulp.src(mainPath).pipe(plumber()).pipe(coffee({bare:true})).pipe(gulp.dest(targetPath))
-
-  return
-
-module.exports.watch = mainPath
+module.exports.watch = sourcePaths
+module.exports.displayName = "main"
