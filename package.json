@@ -1,0 +1,36 @@
+{
+    "name": "offin",
+    "version": "0.0.1",
+    "description": "Inject JSON data into an Office doucment",
+    "main": "index.js",
+    "bin": {
+        "oxi": "cli.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/braintapper/offin.git"
+    },
+    "author": "Steven Ng",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/braintapper/offin/issues"
+    },
+    "homepage": "https://github.com/braintapper/offin",
+    "dependencies": {
+        "coffeescript": "^2.4.1",
+        "docxtemplater": "^3.21.1",
+        "elementtree": "^0.1.7",
+        "jszip": "^2.6.1",
+        "pizzip": "^3.0.6",
+        "sugar-and-spice": "0.0.5",
+        "xlsx-injector": "0.0.3"
+    },
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-coffee": "^3.0.3",
+        "gulp-plumber": "^1.2.1"
+    }
+}

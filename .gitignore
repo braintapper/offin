@@ -2,13 +2,7 @@
 logs
 *.log
 # Test files
-*.xlsx
-*.docx
-*.pptx
-*.cson
-*.json
-*.yaml
-*.yml
+tests/output
 # Runtime data
 pids
 *.pid
